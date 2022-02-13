@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+	<meta name = "introduction" content = "no-reference"/>
+	<title>Generate Music</title>
+</head>
+<body>
+	<!--<div id="register-container">
+		<div id="register">
+			<i class="fas fa-times-circle"></i> <br>
+
+			<form action="post_comment.php" id="form" method="post" id="commentform">
+				
+			
+				<label for="email" class="required">E-mail:</label><br>
+				<input type="email" name="email" id="email" value="" tabindex="1" required="required"><br>
+			
+				<label for="password" class="required">Password:</label><br>
+				<input name="password" id="password" value="" tabindex="2" type="password" required="required"></input><br>
+			
+				
+				<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+				<input id="submit-button"name="submit" type="submit" value="Login" />
+			
+			</form>
+			
+		</div>
+	</div>-->
+	<form class="list-form">
+		<h4>lists<span><i class="fas fa-times-circle"></i></span></h4>
+		<div class="form-control">
+		  <input
+			type="text"
+			name="name"
+			class="list-input"
+			placeholder="Make a new list..."
+		  />
+		  <button type="submit" class="btn submit-btn">submit</button>
+		</div>
+		<div class="form-alert"></div>
+		<section class="lists-container">
+			<p class="loading-text">Loading...</p>
+			<div class="lists"></div>
+		</section>		
+	</form>
+
+	<header>
+			<div id="initials">
+				<h1>GRM</h1>
+			</div>
+			<div id="nav-pages">
+				<nav>
+					<a href="#">home</a>
+					<a href="#">blog</a>
+					<a href="#">contact</a>
+				</nav>
+			</div>
+	</header><br><br><br>
+	
+	<main> 
+	<div class="container">
+		<div id="motto">
+			<h1 id="motto">Explore the music world</h1>
+		</div><br><br>
+		<div id="video">
+	
+			<div class="selector-container">
+				<select name="genres" id="genres">
+					<option selected disabled>Choose the genre here</option>
+					<option value="alternatives" >Alternative</option>
+					<option value="blues" >Blues</option>
+					<option value="classical" >Classical</option>
+					<option value="country" >Country</option>
+					<option value="edm" >EDM</option>
+					<option value="folk" >Folk</option>
+					<option value="hiphop" >HipHop</option>					
+					<option value="indierock" >Indie Rock</option>
+					<option value="kpop" >K-pop</option>
+					<option value="latin" >Latin</option>
+					<option value="metalrock" >Metal-Rock</option>
+					<option value="opera" >Opera</option>
+					<option value="pop" >Pop</option>
+					<option value="rnbsoul" >R&B Soul</option>
+				</select>
+				<button id="generatebutton">Generate</button>
+			</div>
+			<div >
+				<h1 id="videoTitle"></h1>
+				
+				<button type="button" class="addList-btn"><i class="fas fa-plus-circle"></i></button>
+			</div>
+
+			<div class="player-container">
+				<iframe id="player"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="rating">
+			<span class="rating__result"></span> 
+				<i class="rating__star far fa-star"></i>
+				<i class="rating__star far fa-star"></i>
+				<i class="rating__star far fa-star"></i>
+				<i class="rating__star far fa-star"></i>
+				<i class="rating__star far fa-star"></i>
+			</div>
+			
+			<div id="aboutTrack">
+
+				<h1 id="titleONe">
+					About this track
+				</h1>
+				<button id="getWiki">search on Wikipedia</button>
+			
+			</div>
+			<!-- <section class="lists-container">
+				<p class="loading-text">Loading...</p>
+				
+			</section> -->
+		</div><br><br>
+
+	</div>
+
+
+
+	</main>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+		integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer">
+	</script>
+	<script src="index.js"></script>
+	<script src="funcs.js"></script>
+	<!-- <script src="addSong.js"></script> -->
+
+</body>
+</html>

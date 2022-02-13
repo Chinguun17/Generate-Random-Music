@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #181818;
+}
+
+.list-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgb(114, 106, 226);
+	text-align: center;
+	width: 20%;
+	z-index: 100;
+	display: none;
+}
+
+header{
+	width: 100%;
+	padding: 30px;
+	background-color: #181818;
+	display: flex;
+	color: blanchedalmond;
+	border-bottom: 1px solid black;
+	margin: auto;
+}
+
+header #initials{
+	width: 20%;
+	text-align: center;
+	color: #2f52c5;
+}
+
+header #nav-pages{
+	display: flex;
+	justify-content: space-around;
+	background-color: #181818;
+	width: 100%;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #181818;
+	width: 70%;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(141, 175, 219);
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.container{
+	align-items: center;
+	background-color: #181818;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.container div{
+	padding: 30px;
+	border-radius: 10px;
+	background-color: #212121;
+}
+
+.container #motto{
+	color: rgb(114, 106, 226);
+	padding: 30px;
+	width: 94%;
+}
+
+#video{
+	width: 94%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#video .selector-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#video select{
+	background-color: #d4c7eb;
+	height: 40px;
+	border-radius: 15px;
+}
+
+#video #generatebutton{
+	width: 85px;
+	height: 25px;
+	border-radius: 10px;
+	margin-left: 8px;
+	text-align: center;
+	border: none;
+	color: #d4c7eb;
+	background-color: rgb(114, 106, 226);
+}
+
+#video #videoTitle{
+	padding: 30px;
+	padding-bottom: 50px;
+	color: #d4c7eb;
+}
+
+#video .player-container{
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	height: auto;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	background-color: white;
+}
+
+#player{
+	background-color: #d4c7eb;
+	/*border-radius: 5px;
+	width: 68%;
+	max-height: 100%;
+	min-height: auto;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+#aboutTrack{
+	width: 50%;
+	height: auto;
+	padding-top: 0;
+	align-items: center;
+}
+
+
+#getWiki{
+	border-radius: 5px;
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	margin-top: 20px;
+	background: rgb(114, 106, 226);
+	border: none;
+}
+.lists-container{
+	min-width: 94%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 100px;
+}
+#register-container{
+	display: none;
+}
+
+#register{
+	width: 30%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 100;
+	position: fixed;
+	top: 50%;
+	left: 35%;
+	margin: auto;
+	background-color: rgb(114, 106, 226);
+	padding-bottom: 30px;
+	border-radius: 10px;
+}
+
+ .fa-times-circle{
+	 align-self: flex-end;
+	 background-color: rgb(114, 106, 226);
+	 padding: 10px;
+	 border-radius: 10px;
+	 color: #2f52c5;
+
+ }
+#form{
+	width: 50%;
+	color: white;
+	background-color: rgb(114, 106, 226);
+	padding-bottom: 10px;
+}
+
+
+#form input{
+	margin-bottom: 0px;
+	background-color: #d4c7eb;
+	border-radius: 5px;
+	border: 0px;
+	padding: 3px;
+}
+#form input:active{
+	border: 0px;
+
+}
+
+
+#form #submit-button{
+	justify-self: flex-end;
+	margin-top: 10px;
+	padding: 5px;
+	color: rgb(114, 106, 226);
+	background-color: #d4c7eb;
+	border-radius: 5px;
+	border: none;
+	opacity: 1;
+}
